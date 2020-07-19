@@ -56,11 +56,11 @@ th, td {
 }
 #imageright { /*to  float paragraph image with id=imageright to the right*/
   float: right;
-  padding: 3em;
+  padding: 1em;
 }
 #imageleft {/*to  float paragraph image with id=imageleft to the left*/
   float: left;
-  padding: 3em;
+  padding: 1em;
 }
 img {
   display: block;
