@@ -27,23 +27,43 @@
         font-size: 20px;
         font-family: 'Montserrat', sans-serif; 
         position: relative;
-        background-color: gray;
-        text-decoration: none;
-        color: rgb(255,255,255);
     }
-    a:link {
-        text-decoration: none
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
     }
-    a:visited {
+
+    li {
+    float: left;
+    bordercollapse: collapse
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color:lightgrey;
     }
-    a:active {
-    text-decoration: underline;
-    color:white;
+
+    li a:hover:not(.active) {
+    background-color: darkgrey;
     }
-</style>
-<head>
+
+    .active {
+  background-color: powderblue;
+  color: black;
+    }
+    div {
+        border-collapse: collapse;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    </style>
+    <head>
     <h1>Cut By Color</h1>
     
 </head>
@@ -57,12 +77,16 @@
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
      </p>
 </body>
+<div>
 <footer>
-    <ul>Week 2 Assigment Links</ul>
+    <ul>
+        <li><a class="active" href=week3.html>Week 3 Assignment</a></li>
+        <li><a href=cutbycolor.html>My Site In Progress</a></li>
         <li><a href=tags.html>Tags Examples</a></li>
         <li><a href=nested.html>Nested Examples</a></li>
         <li><a href=attributes.html>Attributes Examples</a></li>
-        <li><a href=index.html>Home</a></li>
+    
     <ul>
 </footer>
+</div>
 </html>
