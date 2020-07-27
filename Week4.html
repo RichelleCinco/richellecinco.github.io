@@ -16,7 +16,6 @@
        p {
            text-align: center;
            font-family: 'Montserrat';
-           color: darkgray;
            font-size: 1.5em;
        }
        h2 {
@@ -58,7 +57,7 @@
         <div id="div">
         <h2 id="header2">Blue | Red</h2>    
 
-            <p>Change The Color.</p>
+            <p>Change The Color.</p><!--I wanted to try to change images using buttons in its simplest form with JS-->
             
             <button onclick="document.getElementById('myImage').src='https://richellecinco.github.io/Images/Blue%20Dot.jpg'"width=350 height=400>Click for Blue Dot</button>
             
@@ -69,16 +68,17 @@
             <br>
             <br>
             <h2 id="h2">Emphasize</h2>
-            <p id="demo"><b>Now, let's change the font, color, and background color using javascript.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            <p id="demo"><b>Now, let's change the font, color, and background (color in form below)using javascript.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>
             <button type="button" onclick="myFunction()">Click Me!</button>
-            </p>
+            </p><!--inline script below-->
             <script>
                 function myFunction() {
                   document.getElementById("demo").style.fontSize = "2em"; 
+                  document.getElementById("demo").style.color = "darkgrey"; 
                   document.getElementById("header2").style.fontSize="3em";
                   document.getElementById("h2").style.color = "Orange";
                   document.getElementById("h2").style.fontSize="3em";
@@ -88,7 +88,7 @@
 
         <div>
             <hr>
-          <form>
+          <form><!--Below is the external JS-->
             <script src="Week4.js"></script>
                <form method="post" action="something.php" name="myForm">
             <div>
