@@ -32,6 +32,15 @@ body {
     font-size: 4rem;
 }
 
+#contact-me {
+    color: darkgrey;
+    font-size: larger;
+    border-radius: 50%;
+    padding: 2.5rem;
+    margin: 2.5rem;
+    box-shadow: darkgrey;
+}
+
 .navbar.scrolled {
     background: rgb(222,192,222);
     opacity: .8;  
@@ -71,4 +80,12 @@ footer {
     text-decoration: none;
 }
 
+#author {
+    display: block;
+    margin: auto;
+}
+
+h2{
+    color:darkgray;
+}
 
