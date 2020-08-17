@@ -89,13 +89,8 @@ h2{
     color:hsl(0, 0%, 20%);
 }
 
-a:link {
+#kassie {
     text-decoration: none;
     color:red;
 }
-
-a:hover {
-    color: hsl(0, 0%, 30%);
-    font-weight: bold;
-  }
 
