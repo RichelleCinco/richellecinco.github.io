@@ -6,18 +6,96 @@
     font-style: normal;
 }
 
+body {
+    justify-content: center;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.4s;
-    font-size: 20px;
 }
 
+.hero {
+    margin-top: 2%;
+}
 .container{
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    height:100vh;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+.onecolumn {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.twocolumn {
+    flex: 50%;
+    padding:0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row1 {
+    display: flex;
+    text-align: center;
+    height:100vh;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row2 {
+    display: flex;
+    text-align: center;
+    height:100vh;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.about, h1{
+    background-color: black;
+    display: flex;
+    text-align: center;
+    height:100vh;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:white;
+    font-size: 1em;
+    font-family: 'Roboto';
+    padding: 5%;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.vid {
+    flex-wrap: nowrap;
+}
+
+.padded {
+    margin: 4%;
 }
 
 /* Navbar section */
@@ -30,6 +108,8 @@
     text-align: center;
     background-color: white;
     opacity: .8;
+    z-index: 1;
+    font-size: 20px;
 }
 
 .nav div.logo{
@@ -82,7 +162,7 @@
 
 
 
-/* Media query section */
+/* Media query for navbar */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     
@@ -113,46 +193,46 @@
     }
 }
 
-.row {
-    margin: 300px;
-}
 
-.row1 {
-    display: flex;
-    text-align: center;
-    height:100vh;
-    overflow:hidden;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.row2 {
-    display: flex;
-    text-align: center;
-    height:100vh;
-    overflow:hidden;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-}
-
-
-.onecolumn {
-    flex: 100%;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.twocolumn {
-    flex: 50%;
-    padding:0;
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-
+    .example {
+        position: relative;
+        padding: 0;
+        width: 300px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .content {
+        opacity: 0;
+        font-size: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #5e5d5d;
+        background-color: rgba(170, 169, 169, 0.3);
+        width: 100%;
+        height: 100vh;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+        text-align: center;
+      }
+      .example .content:hover {
+        opacity: 1;
+      }
+      .example .content .text {
+        height: 0;
+        opacity: 1;
+        transition-delay: 0s;
+        transition-duration: 0.4s;
+      }
+      .example .content:hover .text {
+        opacity: 1;
+        transform: translateY(250px);
+        -webkit-transform: translateY(250px);
+      }
  
  
 @media screen and ( max-width: 700px) {
@@ -178,11 +258,7 @@
         text-align: center;
         justify-content: center;
     }
-    #videoBG {
-        display: none;
-    }
     .main-vid {
-        background: url('chateau de gudanes_600px.jpg');
         display: flex;
         background-repeat: none;
         background-position: center;
@@ -251,5 +327,6 @@
         color: gray;
     }
 }
+
 
   
