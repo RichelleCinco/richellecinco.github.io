@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 *{
     padding: 0px;
     margin: 0px;
@@ -15,9 +16,8 @@
 }
 
 #h1-text-black  {
-    color: white;
+    color: black;
     font-family: 'Roboto';
-    background-color: black;
     padding: 5%;
 }
 
@@ -26,6 +26,12 @@ body {
     align-content: center;
     box-sizing: border-box;
 }
+
+#about {
+    background-color: black;
+}
+
+.twocolumn-black {}
 
 .logo, #logo {
     text-align: center;
@@ -70,7 +76,6 @@ body {
     padding:0;
     overflow: hidden;
     flex-wrap: nowrap;
-    background-color: black;
     height: 100vh;
 }
 
@@ -86,7 +91,7 @@ body {
 #h1-text {
     font-size: 2.5em;
     font-family: 'Roboto', sans-serif;
-    color: rgb(228, 226, 226);
+    color: rgb(92, 92, 92);
     letter-spacing: 3pt;
     flex-wrap: nowrap;
 }
@@ -208,7 +213,6 @@ img {
     flex: 100%;
     padding:0;
     flex-wrap: nowrap;
-    background-color: black;
     height: 100%;
     }
 
@@ -218,6 +222,10 @@ img {
 
     .nav{
         font-size: 15px;
+    }
+
+    #h1-text-black {
+        font-size: 1em;
     }
 }
 
@@ -239,6 +247,13 @@ img {
         margin-left: 50px;
         padding-left: 20px;
     }
+
+    #h1-text-black {
+        font-size: 1em;
+        margin: 2%;
+        padding:2%;
+        width: 100%;
+    }
 }
 
 
@@ -256,8 +271,7 @@ img {
         margin: 5%;
         padding:5%;
         font-family: 'Roboto';
-        color: white;
-        background-color: black;
+        color: black;
         width: 100%;
     }
 }
