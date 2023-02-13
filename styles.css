@@ -29,9 +29,8 @@ body {
 
 #about {
     background-color: black;
+    color: white;
 }
-
-.twocolumn-black {}
 
 .logo, #logo {
     text-align: center;
@@ -91,9 +90,13 @@ body {
 #h1-text {
     font-size: 2.5em;
     font-family: 'Roboto', sans-serif;
-    color: rgb(92, 92, 92);
+    color: white;
     letter-spacing: 3pt;
     flex-wrap: nowrap;
+}
+
+.black {
+    background-color: black;
 }
 
 p {
@@ -226,6 +229,17 @@ img {
 
     #h1-text-black {
         font-size: 1em;
+        color: black;
+    }
+
+    #about {
+        background-color: black;
+        color: white;
+    }
+
+    .padded {
+        margin: 2%;
+        padding: 2%;
     }
 }
 
